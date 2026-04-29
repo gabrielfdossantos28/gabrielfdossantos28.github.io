@@ -165,7 +165,7 @@
         <div id="segundo">
             <h5> &#128640; História do Programa Espacial Brasileiro</h5>
             <p> <B>Início até criação da AEB</B></p>
-            💡 As moedas flutuam diariamente conforme a economia global
+
             <p style="margin-bottom: 20px;">A história do Programa Espacial Brasileiro começa em 1961, quando o então presidente, Jânio Quadros, cria o <strong>GOCNAE (Grupo de Organização da Comissão Nacional de Atividades Espaciais)</strong>, que posteriomente se tornou <strong>CNAE (Comissão Nacional de Atividades Espaciais)</strong>, que focou em pesquisas espaciais básicas. Na década de 1970, especificamente 1971, a estrutura evoluiu para criação do <strong>Nacional de Pesquisas Espaciais (INPE)</strong>, que se tornou o braço civil e científico do setor, onde se dedicou no desenvolvimento de satélites e monitoramento terretres.</p>
            
             <p style="margin-bottom: 20px;">Paralelamente ao desenvolvimento científico no INPE, o setor militar, por meio do <strong>Centro Técnico Aeroespacial (CTA)</strong>, assumiu a responsabilidade pela criação de foguetes e infraestrutura de lançamento. Essa divisão de esforços culminou, em 1979, na aprovação da <strong>Missão Espacial Completa Brasileira (MECB).</strong> O objetivo era ambicioso: o Brasil deveria ser capaz de fabricar seus próprios satélites, construir seus veículos lançadores e possuir uma base de operações moderna, o que levou à criação do <strong>Centro de Lançamento de Alcântara</strong> nos anos 80.</p>
@@ -204,5 +204,21 @@
         <p>"O Brasil não busca o céu para fugir da terra, mas para aprender a enxergar a si mesmo com a grandeza e a clareza que só o infinito permite."</p>
     </footer>
 
+    <script>
+        function converter() {
+            let reais = document.getElementById('valorReal').value;
+            let select = document.getElementById('moedaDestino');
+            let taxa = select.value;
+            let moedaNome = select.options[select.selectedIndex].text;
+           
+            if (reais === "" || reais <= 0) {
+                document.getElementById('resultado').innerHTML = "⚠️ Por favor, digite um valor válido!";/* Altera o espaçamento abaixo do parágrafo */
+            }
+           
+            let convertido = reais * taxa;
+            document.getElementById('resultado').innerHTML = `R$ ${reais} equivalem a ${convertido.toFixed(2)} ${moedaNome}`;
+            document.getElementById('resultado').style.backgroundColor = "#d5f5e3";
+        }
+    </script>
 </body>
 </html>
