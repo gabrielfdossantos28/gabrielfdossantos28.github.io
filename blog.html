@@ -1,34 +1,237 @@
 <html>
+<head>
     <style>
-        section{
-            width:100%;
-            height:100%;
-            background-color:lightblue;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
         }
-        #primeiro{
-            width:20%;
-            height:100%;
-            background-color:red;
+       
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-         #segundo{
-            width:60%;
-            height:100%;
-            background-color:blue;
+       
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #2c3e50;
         }
-         #terceiro{
-            width:20%;
-            height:100%;
-            background-color:black;
+       
+        section {
+            width: 100%;
+            flex: 1;
+            background-color: #f0f0f0;
+            display: flex;
+            min-height: 500px;
         }
+       
+        #primeiro {
+            width: 20%;
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+       
+        #segundo {
+            width: 60%;
+            background-color: white;
+            padding: 30px;
+        }
+       
+        #terceiro {
+            width: 20%;
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-left: 1px solid #ccc;
+        }
+       
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+       
+        .moeda {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+       
+        .moeda:hover {
+            background-color: #2980b9;
+        }
+       
+        .conversor {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+       
+        input, select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+       
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+       
+        button:hover {
+            background-color: #219a52;
+        }
+       
+        .resultado {
+            background-color: #d5f5e3;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+       
+        .dica {
+            background-color: #f9e79f;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+       
+        h5 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        p {
+    margin-bottom: 20px;
+}
+
     </style>
-    <body>
-    <header></header>
-    <Section>
-        <div id="primeiro"></div>
-        <div id="segundo"></div>
-        <div id="terceiro"></div>
-    </Section>
-    <footer></footer>
-    </body>
+</head>
+<body>
+    <header>
+        <h2> &#128640; Programa Espacial Brasileiro &#127463;&#127479;</h2>
+        <p>Entenda como funciona o maior programa espacial da américa latina</p>
+    </header>
+   
+    <h1>&#128752;&#65039; Programa Espacial Brasileiro</h1>
+   
+    <section>
+        <div id="primeiro">
+            <h3>💡 Curiosidades</h3>
+            <div class="dica">
+                <strong>Primeiro Voo Comercial</strong><br>
+            Em dezembro de 2025, o Brasil realizou o primeiro lançamento orbital comercial a partir de Alcântara, com o foguete sul-coreano HANBIT-Nano.
+            </div>
+            <div class="dica">
+                <strong>Satélite Amazônia-1</strong><br>
+                É o primeiro satélite de observação da Terra totalmente projetado, integrado e testado no Brasil, focado em monitorar o desmatamento.
+            </div>
+            <div class="dica">
+                <strong>Centro de Lançamento de Alcântara</strong><br>
+                É considerada uma das melhores do mundo para lançar foguetes. Por estar muito próxima à Linha do Equador, a rotação da Terra dá um "impulso" natural aos foguetes, permitindo uma economia de até 30% no combustível em comparação com bases nos Estados Unidos ou na Europa.
+
+            </div>
+            <div class="dica">
+                <strong>Primeiro Astronauta Brasileiro</strong><br>
+                O primeiro brasileiro a ir para o espaço, Marcos Pontes, viajou em uma missão histórica batizada de "Missão Centenário", em 2006. Ele chegou à Estação Espacial Internacional (ISS) a bordo de uma nave russa Soyuz, realizando mais de 15 experimentos científicos em microgravidade.
+            </div>
+        </div>
+       
+        <div id="segundo">
+            <h5> &#128640; História do Programa Espacial Brasileiro</h5>
+            <p> <B>Início até criação da AEB</B></p>
+            
+            <p style="margin-bottom: 20px;">A história do Programa Espacial Brasileiro começa em 1961, quando o então presidente, Jânio Quadros, cria o <strong>GOCNAE (Grupo de Organização da Comissão Nacional de Atividades Espaciais)</strong>, que posteriomente se tornou <strong>CNAE (Comissão Nacional de Atividades Espaciais)</strong>, que focou em pesquisas espaciais básicas. Na década de 1970, especificamente 1971, a estrutura evoluiu para criação do <strong>Nacional de Pesquisas Espaciais (INPE)</strong>, que se tornou o braço civil e científico do setor, onde se dedicou no desenvolvimento de satélites e monitoramento terretres.</p>
+           
+            <p style="margin-bottom: 20px;">Paralelamente ao desenvolvimento científico no INPE, o setor militar, por meio do <strong>Centro Técnico Aeroespacial (CTA)</strong>, assumiu a responsabilidade pela criação de foguetes e infraestrutura de lançamento. Essa divisão de esforços culminou, em 1979, na aprovação da <strong>Missão Espacial Completa Brasileira (MECB).</strong> O objetivo era ambicioso: o Brasil deveria ser capaz de fabricar seus próprios satélites, construir seus veículos lançadores e possuir uma base de operações moderna, o que levou à criação do <strong>Centro de Lançamento de Alcântara</strong> nos anos 80.</p>
+           
+            <p>Apesar dos avanços técnicos, a falta de uma gestão unificada que integrasse os interesses civis e militares gerava dificuldades políticas e orçamentárias. Para resolver essa fragmentação e dar ao programa uma fachada mais diplomática e estratégica, o governo federal criou, em 10 de fevereiro de 1994, a <strong>Agência Espacial Brasileira (AEB).</strong> Com essa nova instituição, o comando do programa saiu das mãos exclusivas dos militares e passou para uma autoridade civil vinculada à Presidência da República, consolidando a estrutura que coordena as atividades espaciais do país até hoje.</p>
+            <h3 style="margin-top: 20px;">&#128640;Família Sonda</h3>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li><strong>Câmbio Fixo:</strong> o governo define o valor da moeda. Exemplo: Arábia Saudita (SAR atrelado ao USD).</li>
+                <li><strong>Câmbio Flutuante:</strong> o valor é definido pelo mercado. Exemplo: Real (BRL), Dólar (USD), Euro (EUR).</li>
+                <li><strong>Câmbio Administrado:</strong> mistura dos dois, com intervenção do banco central.</li>
+            </ul>
+           
+            <div class="conversor">
+                <h3>🧮 Conversor de Moedas (exemplo didático)</h3>
+                <p>Digite um valor em Reais (BRL) e veja a conversão aproximada:</p>
+                <input type="number" id="valorReal" placeholder="Valor em R$">
+                <select id="moedaDestino">
+                    <option value="0.18">Dólar (USD) - R$ 1 ≈ $ 0,18</option>
+                    <option value="0.17">Euro (EUR) - R$ 1 ≈ € 0,17</option>
+                    <option value="0.15">Libra (GBP) - R$ 1 ≈ £ 0,15</option>
+                    <option value="27.50">Iene (JPY) - R$ 1 ≈ ¥ 27,50</option>
+                </select>
+                <button onclick="converter()">Converter</button>
+                <div id="resultado" class="resultado"></div>
+            </div>
+        </div>
+       
+        <div id="terceiro">
+            <h3>📊 Cotações aproximadas</h3>
+            <div class="moeda" onclick="alert('Dólar comercial: cerca de R$ 5,50')">
+                🇺🇸 USD → R$ 5,50
+            </div>
+            <div class="moeda" onclick="alert('Euro comercial: cerca de R$ 6,00')">
+                🇪🇺 EUR → R$ 6,00
+            </div>
+            <div class="moeda" onclick="alert('Libra: cerca de R$ 7,00')">
+                🇬🇧 GBP → R$ 7,00
+            </div>
+            <div class="moeda" onclick="alert('Iene: cerca de R$ 0,036')">
+                🇯🇵 JPY → R$ 0,036
+            </div>
+            <div class="dica" style="margin-top: 20px;">
+                <strong>⚠️ Importante:</strong> Os valores acima são apenas exemplos didáticos. As cotações reais mudam constantemente.
+            </div>
+        </div>
+    </section>
+   
+    <footer>
+        <p>Projeto educacional - Entendendo o mercado de câmbio | Desenvolvido em sala de aula</p>
+        <p>💡 As moedas flutuam diariamente conforme a economia global</p>
+    </footer>
+
+    <script>
+        function converter() {
+            let reais = document.getElementById('valorReal').value;
+            let select = document.getElementById('moedaDestino');
+            let taxa = select.value;
+            let moedaNome = select.options[select.selectedIndex].text;
+           
+            if (reais === "" || reais <= 0) {
+                document.getElementById('resultado').innerHTML = "⚠️ Por favor, digite um valor válido!";/* Altera o espaçamento abaixo do parágrafo */
+            }
+           
+            let convertido = reais * taxa;
+            document.getElementById('resultado').innerHTML = `R$ ${reais} equivalem a ${convertido.toFixed(2)} ${moedaNome}`;
+            document.getElementById('resultado').style.backgroundColor = "#d5f5e3";
+        }
+    </script>
+</body>
 </html>
